@@ -1,0 +1,15 @@
+/* Scss Document */
+
+
+
+@mixin fixed-top {
+	top: 0 !important;
+	position: fixed !important;
+}
+
+
+
+
+.fixed-top {
+	@include fixed-top;
+}

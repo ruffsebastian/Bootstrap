@@ -1,0 +1,18 @@
+/* Scss Document */
+$radius:15px;
+
+@mixin my-cards {
+	background-color: $brand-white;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+	transition: all 0.3s ease 0s;
+	border-radius: $radius;
+	&:hover {
+		background-color: $brand-white; 
+		box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.6);
+		transform: translate(3px,-40px);
+	}
+}
+
+.cards {
+	@include my-cards;
+}

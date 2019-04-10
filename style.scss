@@ -1,0 +1,33 @@
+/* Scss Document */
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/type";
+
+// Utilities
+
+@import "bootstrap/scss/utilities";
+
+// Specific Components
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/jumbotron";
+@import "bootstrap/scss/grid"; 
+@import "bootstrap/scss/card"; 
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/list-group";
+@import "bootstrap/scss/dropdown";
+
+/*My styles*/
+@import "variables";
+@import "mixins";
+@import "typography";
+@import "jumbotron"; 
+@import "buttons";
+@import "image";
+@import "header";
+@import "cards";
+@import "navbar";
+@import "footer";
+

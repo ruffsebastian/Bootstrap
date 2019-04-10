@@ -1,0 +1,5 @@
+/* Scss Document */
+
+@mixin my-gradient {
+	background-image: linear-gradient($brand-footer, #fff);
+}

@@ -1,0 +1,48 @@
+/* Scss Document */
+$brand-font-size:1.5em;
+
+@mixin my-brand {
+	color:$brand-secondary;
+	font-size: $brand-font-size;
+	font-weight: 600;
+}
+
+@mixin brand-icon {
+	color:$brand-primary;
+	font-size: $brand-font-size;
+}
+
+@mixin nav-link {
+	color:$brand-secondary;
+	@include typo-btn;
+	&:hover {
+		color:lighten($brand-secondary, 10%);
+	}
+}
+
+@mixin my-navbar-light {
+	background-color: $brand-white !important;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	padding: 1.2em 1em;
+}
+
+
+.nav-item {
+	@include nav-link;
+} 
+
+.navbar-light .navbar-nav .active > .nav-link {
+	color:$brand-primary;
+}
+
+.navbar-light {
+	@include my-navbar-light;
+}
+
+.navbar-brand {
+	@include my-brand;
+}
+
+.icon {
+	@include brand-icon;
+}
